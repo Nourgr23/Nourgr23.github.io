@@ -1,0 +1,115 @@
+/* Styles globaux */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Titre */
+h1 {
+    color: #2C3E50;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #34495E;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Conteneur pour centrer le contenu */
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Style des champs de saisie et des boutons */
+input[type="file"],
+input[type="text"],
+button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Input file spécifique */
+input[type="file"] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #3498DB;
+    /* Bleu doux */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980B9;
+    /* Bleu foncé */
+}
+
+#downloadLink {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #3498DB;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #3498DB;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#downloadLink:hover {
+    background-color: #3498DB;
+    color: white;
+}
+
+/* Section pour le message décodé */
+#decodedMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #7F8C8D;
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stéganographie</title>
+</head>
+
+<body>
+    <h1>Application de Stéganographie</h1>
+
+    <!-- Section d'encodage -->
+    <h2>Encodage</h2>
+    <input type="file" id="encodeImageInput" accept="image/*">
+    <input type="text" id="messageInput" placeholder="Entrez le message à cacher">
+    <button id="encodeButton">Cacher le message</button>
+    <a id="downloadLink" style="display:none;"></a>
+
+    <!-- Section de décodage -->
+    <h2>Décodage</h2>
+    <input type="file" id="decodeImageInput" accept="image/*">
+    <button id="decodeButton">Afficher le message caché</button>
+    <p id="decodedMessage"></p>
+
+    <script src="script.js"></script>
+    <script src="iam.js"></script>
+</body>
+
+</html>
